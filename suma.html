@@ -1,0 +1,54 @@
+<html> <!---Alexandra Yamileth Covarrubias Herrera "4a" -->
+<head>
+    <head>
+        <title>suma de dos numeros</title>
+        <style>
+          body {
+            text-align:center;
+          }
+          
+          .results{
+            padding-left: 50%;
+    
+          }
+        </style>
+        </head>
+      <body>
+            <div style ="background:#5fabcb;">
+            <font color ="black" size="7px"> 
+                <h2> suma de dos numeros</h2>
+            </font>
+            </div>
+            <div style ="background:#ae4eba;">
+            
+
+ <form name="calc"> 
+    <font color ="black" size="5px"> 
+<p>Valor 1: <input type="Text" name="operando1" > 
+<br>
+<p>Valor 2: <input type="Text" name="operando2" >
+<br>
+<p>Resultado: <input type="Text" name="resultado" >
+
+    
+</font>
+
+<br>
+
+<input type="Button" name="" value=" pulsame  " onclick="calcula('+')" >
+<br>
+
+</form>
+</body>
+
+<script>
+  function calcula(operacion){
+    var operando1 = document.calc.operando1.value 
+    var operando2 = document.calc.operando2.value
+    var result = eval(operando1 + operacion + operando2)
+    document.calc.resultado.value = result
+     
+}
+</script>
+</body>
+</html>
